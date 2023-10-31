@@ -1,0 +1,14 @@
+xterm*background: black
+xterm*foreground: white
+xterm*SaveLines: 100000
+xterm*faceName: Monaco:antialias=true
+xterm*faceSize: 8
+xterm*VT100.translations: #override \
+    Shift Ctrl<Key>C: copy-selection(CLIPBOARD) \n\
+    Shift Ctrl<Key>V: insert-selection(CLIPBOARD)
+
+Xft.dpi: 151
+Xft.autohint: 0
+Xft.hinting: 1
+Xft.antialias: 1
+Xft.rgba: rgb
