@@ -113,6 +113,9 @@ pacman -S xorg-xrandr
 pacman -S xorg-xset
 pacman -S kmix
 pacman -S redshift
+pacman -S pulseaudio
+pacman -S pulseaudio-bluetooth
+pacman -S bluez
 pacman -S bluez-utils
 
 # Install AV drivers
