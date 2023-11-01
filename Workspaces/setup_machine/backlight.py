@@ -19,6 +19,6 @@ if brightness == 0 and args.inc:
     delta = 1
 
 if args.inc:
-    run("xbacklight -inc {}".format(delta))
+    run("xbacklight -inc {} -time 0".format(delta))
 elif args.dec:
-    run("xbacklight -dec {}".format(delta))
+    run("xbacklight -dec {} -time 0".format(delta))
