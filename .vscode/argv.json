@@ -1,0 +1,18 @@
+{
+	// Use software rendering instead of hardware accelerated rendering.
+	// This can help in cases where you see rendering issues in VS Code.
+	// "disable-hardware-acceleration": true,
+
+	// Allows to disable crash reporting.
+	// Should restart the app if the value is changed.
+	"enable-crash-reporter": true,
+
+	// Unique id used for correlating crash reports sent from this instance.
+	// Do not edit this value.
+	"crash-reporter-id": "9a238a05-c2a3-455a-9909-a237e170be28",
+	"password-store": "basic",
+
+	// As of 2023-11-01, hardware accelerated rendering is buggy on an intel
+	// thinkpad gen 11.
+	"disable-hardware-acceleration": true,
+}
