@@ -15,5 +15,8 @@ PROMPT_COMMAND='history -a;history -n'
 HISTSIZE=10000000
 HISTFILESIZE=10000000
 
+# Alias `manh` to open the manpage in firefox
+alias manh='man -Hfirefox'
+
 # Set the default editor to vim
 export EDITOR=vim
