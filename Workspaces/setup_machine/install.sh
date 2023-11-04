@@ -118,6 +118,8 @@ pacman -S pulseaudio
 pacman -S pulseaudio-bluetooth
 pacman -S bluez
 pacman -S bluez-utils
+pacman -S xclip
+pacman -S sshfs
 
 # Enable multilib and install steam
 cat << EOF >> /etc/pacman.conf
