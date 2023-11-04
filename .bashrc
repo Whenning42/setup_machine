@@ -18,5 +18,9 @@ HISTFILESIZE=10000000
 # Alias `manh` to open the manpage in firefox
 alias manh='man -Hfirefox'
 
+# Alias `shutdown` and `reboot`
+alias shutdown='sudo shutdown now'
+alias reboot='sudo reboot'
+
 # Set the default editor to vim
 export EDITOR=vim
