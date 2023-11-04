@@ -100,6 +100,7 @@ $USER ALL= NOPASSWD: /usr/bin/halt,/usr/bin/poweroff,/usr/bin/reboot,/usr/bi
 n/pacman -Syu
 EOF
 
+
 # Install packages
 pacman -S sudo
 pacman -S firefox
@@ -118,11 +119,24 @@ pacman -S pulseaudio-bluetooth
 pacman -S bluez
 pacman -S bluez-utils
 
+# Enable multilib and install steam
+cat << EOF >> /etc/pacman.conf
+[multilib]
+Include = /etc/pacman.d/mirrorlist
+EOF
+pacman -Syu
+pacman -S steam
+pacman -S ttf-liberation
+pacman -S lib32-systemd
+
 # Install AV drivers
 # Intel graphics
 pacman -S mesa
+pacman -S lib32-mesa
 pacman -S vulkan-intel
+pacman -S lib32-vulkan-intel
 pacman -S xf86-video-intel
+
 
 # Intel audio
 pacman -S sof-firmware
