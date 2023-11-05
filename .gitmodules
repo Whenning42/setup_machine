@@ -1,0 +1,3 @@
+[submodule "Workspaces/setup_machine/private_configs"]
+	path = Workspaces/setup_machine/private_configs
+	url = git@github.com:Whenning42/private_configs.git
