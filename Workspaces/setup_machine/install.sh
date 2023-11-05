@@ -146,5 +146,11 @@ pacman -S sof-firmware
 # Install power management
 pacman -S acpi
 
+# Install yay
+pacman -S yay
+
+# Install an emoji font
+yay -S otf-openmoji
+
 # Install all of the user's configs
 sudo -H -u $USER install_user_configs.sh
