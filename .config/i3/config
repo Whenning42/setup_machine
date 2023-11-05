@@ -40,8 +40,8 @@ bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
-bindsym XF86MonBrightnessUp exec python /usr/local/bin/backlight.py --inc
-bindsym XF86MonBrightnessDown exec python /usr/local/bin/backlight.py --dec
+bindsym XF86MonBrightnessUp exec sudo /usr/local/bin/backlight.py --inc --use_acpi
+bindsym XF86MonBrightnessDown exec sudo /usr/local/bin/backlight.py --dec --use_acpi
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -184,6 +184,10 @@ mode "resize" {
 }
 
 bindsym $mod+r mode "resize"
+
+# Disable focus follows mouse for multi-pointer X experiments
+focus_follows_mouse no
+focus_on_window_activation none
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
