@@ -120,6 +120,7 @@ pacman -S bluez
 pacman -S bluez-utils
 pacman -S xclip
 pacman -S sshfs
+pacman -S trash
 
 # Enable multilib and install steam
 cat << EOF >> /etc/pacman.conf

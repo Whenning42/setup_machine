@@ -31,5 +31,8 @@ alias manh='man -Hfirefox'
 alias shutdown='sudo shutdown now'
 alias reboot='sudo reboot'
 
+# Alias `rp` to `trash`
+alias rp='trash'
+
 # Set the default editor to vim
 export EDITOR=vim
