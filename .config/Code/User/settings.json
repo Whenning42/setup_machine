@@ -6,4 +6,11 @@
         "--ignore=E203"
     ],
     "editor.rulers": [88],
+
+    "[python]": {
+        "editor.codeActionsOnSave": {
+          "source.organizeImports": true
+           }
+         },
+    "isort.args": ["--profile", "black"],
 }
