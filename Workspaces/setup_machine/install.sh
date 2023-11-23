@@ -120,7 +120,11 @@ pacman -S bluez
 pacman -S bluez-utils
 pacman -S xclip
 pacman -S sshfs
+# cron implementation
 pacman -S trash
+pacman -S cronie
+# Empty trash every 30 days
+(crontab -l ; echo "@daily $(which trash-empty) 30") | crontab -
 
 # Enable multilib and install steam
 cat << EOF >> /etc/pacman.conf
