@@ -3,14 +3,25 @@
     "keyboard.dispatch": "keyCode",
     "flake8.args": [
         "--max-line-length=88",
-        "--ignore=E203"
+        "--ignore=E203,W503"
     ],
     "editor.rulers": [88],
 
     "[python]": {
         "editor.codeActionsOnSave": {
           "source.organizeImports": true
-           }
-         },
-    "isort.args": ["--profile", "black"],
+        },
+        "editor.formatOnSave": true
+    },
+    "isort.args": [
+        "--profile",
+        "black"
+    ],
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": false,
+        "markdown": true,
+        "scminput": false
+    },
+    "git.autofetch": true,
 }
