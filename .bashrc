@@ -33,6 +33,7 @@ alias reboot='sudo reboot'
 
 # Alias `rp` to `trash`
 alias rp='trash'
+alias rm='echo "Run \rm to force the use of rm."'
 
 # Set the default editor to vim
 export EDITOR=vim
