@@ -2,6 +2,7 @@
     "window.zoomLevel": -2,
     "keyboard.dispatch": "keyCode",
     "editor.rulers": [88],
+    "editor.minimap.enabled": false,
 
     "[python]": {
         "editor.codeActionsOnSave": {
